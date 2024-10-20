@@ -9,7 +9,7 @@ function calculateAge(){
         alert('Enter your age........')
     }else{
         const age=getAge(value)
-        res.textContent=`${nameValue}-You are ${age}${age>1?"years":"year"} old.`
+        res.textContent=`${nameValue}-You are ${age} ${age>1?"years":"year"} old.`
         input.value=''
         name.value=''
     }
