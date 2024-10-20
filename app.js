@@ -9,7 +9,11 @@ function calculateAge(){
         alert('Enter your age........')
     }else{
         const age=getAge(value)
-        res.textContent=`${nameValue}-You are ${age} ${age>1?"years":"year"} old.`
+        if(age<=120){
+            res.textContent=`${nameValue}-You are ${age} ${age>1?"years":"year"} old.`
+        }else{
+            res.textContent=`You type ${value} which is Inappropriate date.`
+        }
         input.value=''
         name.value=''
     }
